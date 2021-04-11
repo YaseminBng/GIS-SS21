@@ -1,5 +1,101 @@
 body { 
     background-image: url(Datei/bg.png);
     font-family: sans-serif;
-    width: 800px
+    width: 800px;
+    margin: auto;
+    text-align: center;
 }
+
+/* navigation */
+
+nav {position:sticky}
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+li{
+    float: right;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    color:white;
+    padding: 5px;
+    background-color:black;
+    text-decoration:none;
+}
+
+li a:hover { background-color: grey;}
+
+.active{
+    background-color: white ;
+    color:black;
+}
+
+/*ALLLGEMEIN*/
+h1{color:lightskyblue;
+    border: 1px solid lightskyblue;
+  }
+
+/*portfolio*/
+#homepage{
+    color:rgb(249, 185, 217);
+    font-size:15px;
+    outline-style:none;
+    position:static;
+}
+.Spalte {
+    border-color:hotpink;
+    border:10px;
+    margin: auto;
+
+}
+
+
+
+/*about me*/
+
+h2{color: rgb(87, 185, 245);
+outline-style:dotted ;
+outline-width: 2px;}
+
+table{
+
+    width: 0px;
+    padding: 5px;
+    border: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/*contact*/
+
+form input{
+	border: 1px solid black;
+	background: rgb(233, 232, 232);
+    padding: 5px;
+	
+}
+
+form textarea{
+	
+	font-family: sans-serif;
+	background: rgb(233, 232, 232);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#datenschutz{
+    color:grey;
+    font-size:smaller;
+}
+

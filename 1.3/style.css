@@ -5,7 +5,7 @@ body {
     background-image: url(Datei/bg.png);
     font-family: sans-serif;
     height:100%;
-    width: 800px;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
@@ -14,27 +14,41 @@ h1 {color:lightskyblue;
     border: 1px solid lightskyblue;
 }
 
+main{
+    width:800px;
+    height: auto;
+    margin:auto;
+
+}
 
 /* navigation */
 
-nav {position:sticky}
-ul{ 
+nav{
+    top:0;
+    position: fixed;
+    margin-left:850px;
+    /*klappt nicht mit float:right. */
+}
+
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display:table;
     margin-top: 0;
-    margin-right:auto;
-    margin-left:auto;
+    margin-right:0;
+    margin-left:0;
+    
 }
 
 li{
-    float: right;
     border-right: 1px solid white;
+    display:inline;
+    
 }
 
 li a {
-    display: block;
+    
     color:white;
     padding: 5px;
     background-color:black;
@@ -76,7 +90,6 @@ table{
 .Spalte {
     border:5px solid pink;
     margin: auto;
-
 }
 
 
@@ -100,8 +113,34 @@ form textarea{
     font-size:smaller;
 }
 
-.fa.fa.instagramm{
+.fa.fa.instagram{
     font-size:50px;
     color:black;
     text-decoration: none;
+}
+
+#cat{
+    margin-top:50px;
+}
+
+.fa:hover {
+    background-color: white;
+  
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #55ACEE;
+    color: white;
+  }
+    
+footer{
+    width:auto;
+    height:150px;
+    background-color: pink;
+    
 }

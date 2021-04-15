@@ -24,15 +24,17 @@ main{
 header{
     width:auto;
     height:50px;
-    background-color: pink;
+    background-color: #bbb0f584;
+ 
 }
 
 /* navigation */
 
 nav{
-    top:0;
+    top:28px;
     position: fixed;
-    margin-left:850px;
+    margin-left: 828.5px;
+    
     /*klappt nicht mit float:right. */
 }
 
@@ -44,6 +46,8 @@ ul{
     margin-top: 0;
     margin-right:0;
     margin-left:0;
+   
+    
     
 }
 
@@ -57,16 +61,17 @@ li a {
     
     color:white;
     padding: 5px;
-    background-color:black;
+    background-color:lightskyblue;
+    text-align: center;
     text-decoration:none;
 }
 
-li a:hover { background-color: grey;
+li a:hover { background-color: rgb(249, 130, 255);
 }
 
 .active{
-    background-color: white ;
-    color:black;
+    background-color:rgb(250, 129, 216) ;
+    color:white;
 }
 /*footer + Social media navigationsleiste*/
 
@@ -100,7 +105,8 @@ li a:hover { background-color: grey;
 footer{
     width:auto;
     height:100px;
-    background-color: pink;
+    background-color: #bbb0f584;
+   
     
 }
 
@@ -111,7 +117,8 @@ footer{
     color:rgb(249, 185, 217);
     font-size:15px;
     outline-style:none;
-    position:static;
+    margin-top:-15px;
+    
 }
 
 /*about me*/
@@ -129,7 +136,7 @@ table{
     text-align: center;
 }
 .Spalte {
-    border:5px solid pink;
+    border:3px solid rgb(255, 230, 192);
     margin: auto;
 }
 

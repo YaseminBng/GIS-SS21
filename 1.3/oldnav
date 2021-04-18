@@ -1,0 +1,41 @@
+nav{
+    top:28px;
+    position: fixed;
+    margin-left: 828.5px;
+    
+    /*klappt nicht mit float:right. */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:table;
+    margin-top: 0;
+    margin-right:0;
+    margin-left:0;  
+}
+
+li{
+    border-right: 1px solid white;
+    display: inline;
+   
+    
+}
+
+li a {
+    
+    color:white;
+    padding: 5px;
+    background-color:lightskyblue;
+    text-align: center;
+    text-decoration:none;
+}
+
+li a:hover { background-color: rgb(249, 130, 255);
+}
+
+.active{
+    background-color:rgb(250, 129, 216) ;
+    color:white;
+}

@@ -1,0 +1,191 @@
+
+/*ALLLGEMEIN*/
+
+body { 
+    background-image: url(Datei/bg.png);
+    font-family: sans-serif;
+    height:100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {color:lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+p a {color:grey}
+
+main{
+    width:800px;
+    height: auto;
+    margin:auto;
+}
+
+header{
+    width:auto;
+    height:50px;
+    background-color: #bbb0f584;
+    top: 0;
+    position:sticky;
+}
+
+footer{
+    width:auto;
+    height:100px;
+    background-color: #bbb0f584; 
+}
+
+
+/* navigation */
+
+nav {
+    top: 0;
+    position:sticky
+}
+
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+li{
+    border-right: 1px solid white;
+    float:right;
+}
+
+li a {
+    
+    color:white;
+    display:block;
+    padding: 5px;
+    background-color:lightskyblue;
+    text-align: center;
+    text-decoration:none;
+}
+
+li a:hover { background-color: rgb(250, 129, 216);
+}
+
+.active{
+    background-color:rgb(129, 139, 250) ;
+    color:white;
+}
+/*footer + Social media navigationsleiste*/
+
+.fa {
+    padding: 20px;
+   
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+  }
+  
+  
+.fa:hover {
+    opacity:0.7;
+}
+
+.fa-facebook {
+    background:white;
+    color: rgb(94, 205, 245);
+    
+}
+  
+.fa-instagram {
+    background: white;
+    color: rgb(247, 125, 145);
+    
+} 
+    
+
+
+/*portfolio*/
+
+#homepage{
+    color:rgb(50, 164, 250);
+    font-size:15px;
+    outline-style:none;
+    margin-top:-15px;
+}
+
+h3{color:hotpink;
+    font-size: 17px;
+    outline-style:none;
+ } 
+p>img,audio,video{
+    border:8px solid rgba(218, 177, 115, 0.619);}
+
+.secret{opacity:0.5;}
+
+.secret:hover{
+    opacity:1;
+}
+
+a[href="https://www.gettyimages.de/video/sunset?phrase=sunset&sort=mostpopular"]{
+    background-color:hotpink ;
+    font-size: bigger;
+    color:white;
+}
+
+a:hover {color:rgb(0, 179, 255);}
+/*about me*/
+
+h2{color: rgb(87, 185, 245);
+outline-style:dotted ;
+outline-width: 2px;}
+
+
+
+table{
+
+    width: 0px;
+    padding: 5px;
+    border: 10px;
+    margin: auto;
+    text-align: center;
+}
+.Spalte {
+    border:3px solid rgb(255, 230, 192);
+    margin: auto;
+}
+
+.Spalte+td{background-color: rgb(255, 230, 192);}
+
+hr~p{font-size: 15px ;
+color:#8d78f9;}
+
+p i { color:#6b4ff7;
+   
+}
+
+
+/*contact*/
+form input{
+	border: 1px solid black;
+	background: rgb(233, 232, 232);
+    padding: 5px;
+}
+
+form textarea{
+	font-family: sans-serif;
+	background: rgb(233, 232, 232);
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#datenschutz{
+    color:grey;
+    font-size:smaller;
+}
+
+#cat{
+    margin-top:50px;
+}

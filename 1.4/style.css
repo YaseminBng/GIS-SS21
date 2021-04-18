@@ -35,7 +35,25 @@ footer{
     height:100px;
     background-color: #bbb0f584; 
 }
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width:1024px){
+    
+}
+/*Handy*/
+@media screen and (max-width: 600px) {
+h1{font-size: 80px;}
 
+p>img,audio,video{
+        border:none;}
+}
+
+.box {
+    width: 920px;
+    margin: 50px auto;
+    padding: 0 42px;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    }
 
 /* navigation */
 
@@ -53,6 +71,8 @@ ul{
     margin-right:auto;
     margin-left:auto;
 }
+
+
 
 li{
     border-right: 1px solid white;
@@ -136,13 +156,13 @@ a[href="https://www.gettyimages.de/video/sunset?phrase=sunset&sort=mostpopular"]
 }
 
 a:hover {color:rgb(0, 179, 255);}
+
+
 /*about me*/
 
 h2{color: rgb(87, 185, 245);
 outline-style:dotted ;
 outline-width: 2px;}
-
-
 
 table{
 
@@ -152,6 +172,7 @@ table{
     margin: auto;
     text-align: center;
 }
+
 .Spalte {
     border:3px solid rgb(255, 230, 192);
     margin: auto;

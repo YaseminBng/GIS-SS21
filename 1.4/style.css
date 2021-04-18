@@ -37,15 +37,13 @@ footer{
 }
 /*Tablet*/
 @media screen and (min-width: 600px) and (max-width:1024px){
-    
+    p>img,audio,video{
+        border:5px;}
 }
+    
 /*Handy*/
 @media screen and (max-width: 600px) {
 h1{font-size: 80px;}
-
-p>img,audio,video{
-        border:none;}
-}
 
 .box {
     width: 920px;
@@ -54,6 +52,11 @@ p>img,audio,video{
     background-repeat: no-repeat;
     background-position: center 0px;
     }
+
+p>img,audio,video{
+        border:none;}
+}
+
 
 /* navigation */
 

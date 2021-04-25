@@ -120,3 +120,23 @@ console.log(x);
 
 
 /*A5f*/
+/* function leapyears():void {
+    for (let i:number = 1900; i< 2021;i++) {
+        if (i % 4 == 0 && i % 100 != 0 && i % 400 == 0) {
+         console.log(i);
+        } 
+    }
+     leapyears();
+}
+*/  
+
+//*A6*//
+
+//*6a//
+/*
+for (var x = "#"; x.length <= 7 ; x += "#"){
+    console.log(x);
+    
+} */
+
+//Tut mir leid die restlichen Aufgaben von der 6 bekomme ich nicht hin... aber ich versuche es bis nächste Woche zu meistern :) //

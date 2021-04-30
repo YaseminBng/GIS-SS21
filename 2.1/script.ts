@@ -76,22 +76,22 @@ Gloable Variablen existieren global d.h. sind überall aufgreifbar/sichtbar:Meth
 Übergabeparametern: Gibt an was eine Funktion nach einem Durchlauf weitergibt. void->nichts
 Normale Variablen können nur mit bestimmten Datentypen deklariert werden -> String...
 Eine Funktion kann aus mehrern unterschieliche Variablen und Datentypen bestehen. Ähnlichkeit: beide mit einen Variablennamen benannt werden und damit aufgerufen werden können
-*/ 
+*/
 
 //*A5*//
 //*A5a*//
 
-/*let aufgabe1 zahl = multiply(2, 6);
-function multiply(_a: zahl, _b: zahl): zahl{
-    let antwort: zahl = _a * _b;
+/*let aufgabe1 number = multiply(2, 6);
+function multiply(_a: number, _b: number): number{
+    let antwort: number = _a * _b;
     return antwort;
   }
 console.log(aufgabe1); */
 
 //*A5b*//
 
-/*let aufgabe2: zahl = max(1, 100);
-function max(_a: zahl, _b: zahl): zahl{
+/*let aufgabe2: number = max(1, 100);
+function max(_a: number, _b: number): number{
     if (_a > _b) 
     return _a;
     else 
@@ -112,12 +112,20 @@ console.log(x);
 
 /*A5d*/
 
-/*for(let i:zahl =0; i<10;i++){
+/*for(let i:number =0; i<10;i++){
     Math.random();
     console.log(Math.random()* 100 +1);
 }
 */
 
+//*A5e*//
+function factrorial(n: number): number {
+    let fuct: number = 1;
+    for (let i: number = 1; i <= n; i++) {
+        fuct = fuct * i;
+    }
+    return fuct;
+}
 
 /*A5f*/
 /* function leapyears():void {
@@ -128,15 +136,56 @@ console.log(x);
     }
      leapyears();
 }
-*/  
+*/
 
 //*A6*//
 
-//*6a//
-/*
-for (var x = "#"; x.length <= 7 ; x += "#"){
-    console.log(x);
-    
-} */
 
-//Tut mir leid die restlichen Aufgaben von der 6 bekomme ich nicht hin... aber ich versuche es bis nächste Woche zu meistern :) //
+//*A6a//*
+for (var hash = "#"; hash.length <= 7; hash += "#") {
+    console.log(hash);
+
+} //* A6b_c //*
+function fizzBuzz(num:number) {
+
+    if (num % 5 == 0 && num % 3 == 0) return "fizzbuzz";
+    if (num % 5 == 0) return "fizz";
+    if (num % 3 == 0) return "buzz";
+    return num;
+}
+
+for (var i = 1; i <= 100; i++) console.log(fizzBuzz(i));
+
+//* A6d*//
+
+let size: number = 8;
+let output: string = "";
+for (let zeile: number = 0; zeile < size; zeile++) {
+    for (let spalte: number = 0; spalte < size; spalte++) {
+        if ((zeile + spalte) % 2) {
+            output = output + " ";
+        } else {
+            output = output + "#";
+        }
+    }
+    output += "\n";
+}
+
+//* 6 e)*//
+
+output = "";
+schachbrettmod(8, 8);
+function schachbrettmod(sizeZ: number, sizeS: number): void {
+    for (let zeile: number = 0; zeile < sizeZ; zeile++) {
+        for (let spalte: number = 0; spalte < sizeS; spalte++) {
+            if ((zeile + spalte) % 2) {
+                output = output + " ";
+            } else {
+                output = output + "#";
+            }
+        }
+        output += "\n";
+    }
+    console.log(output);
+}
+

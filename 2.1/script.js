@@ -117,45 +117,49 @@ function factrorial(n) {
 }
 */
 //*A6*//
+/*
+
+
 //*A6a//*
 for (var hash = "#"; hash.length <= 7; hash += "#") {
     console.log(hash);
+
 } //* A6b_c //*
-function fizzBuzz(num) {
-    if (num % 5 == 0 && num % 3 == 0)
-        return "fizzbuzz";
-    if (num % 5 == 0)
-        return "fizz";
-    if (num % 3 == 0)
-        return "buzz";
+function fizzBuzz(num:number) {
+
+    if (num % 5 == 0 && num % 3 == 0) return "fizzbuzz";
+    if (num % 5 == 0) return "fizz";
+    if (num % 3 == 0) return "buzz";
     return num;
 }
-for (var i = 1; i <= 100; i++)
-    console.log(fizzBuzz(i));
-//* A6d*//
-let size = 8;
-let output = "";
-for (let zeile = 0; zeile < size; zeile++) {
-    for (let spalte = 0; spalte < size; spalte++) {
+
+for (var i = 1; i <= 100; i++) console.log(fizzBuzz(i)); /*
+
+//* A6d*/
+/*
+let size: number = 8;
+let output: string = "";
+for (let zeile: number = 0; zeile < size; zeile++) {
+    for (let spalte: number = 0; spalte < size; spalte++) {
         if ((zeile + spalte) % 2) {
             output = output + " ";
-        }
-        else {
+        } else {
             output = output + "#";
         }
     }
-    output += "\n";
+    output += "\n"; // neue Zeile
 }
-//* 6 e)*//
+/*
+//* 6 e)*/
+/*
 output = "";
 schachbrettmod(8, 8);
-function schachbrettmod(sizeZ, sizeS) {
-    for (let zeile = 0; zeile < sizeZ; zeile++) {
-        for (let spalte = 0; spalte < sizeS; spalte++) {
+function schachbrettmod(sizeZ: number, sizeS: number): void {
+    for (let zeile: number = 0; zeile < sizeZ; zeile++) {
+        for (let spalte: number = 0; spalte < sizeS; spalte++) {
             if ((zeile + spalte) % 2) {
                 output = output + " ";
-            }
-            else {
+            } else {
                 output = output + "#";
             }
         }
@@ -163,4 +167,6 @@ function schachbrettmod(sizeZ, sizeS) {
     }
     console.log(output);
 }
+
+*/
 //# sourceMappingURL=script.js.map

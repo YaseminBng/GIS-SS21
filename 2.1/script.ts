@@ -139,6 +139,7 @@ function factrorial(n: number): number {
 */
 
 //*A6*//
+/*
 
 
 //*A6a//*
@@ -154,10 +155,10 @@ function fizzBuzz(num:number) {
     return num;
 }
 
-for (var i = 1; i <= 100; i++) console.log(fizzBuzz(i));
+for (var i = 1; i <= 100; i++) console.log(fizzBuzz(i)); /*
 
-//* A6d*//
-
+//* A6d*/
+/*
 let size: number = 8;
 let output: string = "";
 for (let zeile: number = 0; zeile < size; zeile++) {
@@ -168,11 +169,11 @@ for (let zeile: number = 0; zeile < size; zeile++) {
             output = output + "#";
         }
     }
-    output += "\n";
+    output += "\n"; // neue Zeile 
 }
-
-//* 6 e)*//
-
+/*
+//* 6 e)*/
+/*
 output = "";
 schachbrettmod(8, 8);
 function schachbrettmod(sizeZ: number, sizeS: number): void {
@@ -189,3 +190,4 @@ function schachbrettmod(sizeZ: number, sizeS: number): void {
     console.log(output);
 }
 
+*/

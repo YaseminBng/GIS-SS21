@@ -21,3 +21,17 @@
     max-width: 200px;
     max-height: 200px;
 }
+
+
+body { 
+    background-color:whitesmoke;
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+h1 {color:skyblue;
+    
+}

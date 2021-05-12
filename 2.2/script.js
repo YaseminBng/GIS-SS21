@@ -127,12 +127,67 @@ console.log(split(arr, 1, 2));
 console.log(split(arr, 2, 0)); // Bonus c)
 console.log(split(arr, -1, 2)); // Bonus c)
 console.log(split(arr, 0, 7)); // Bonus c)
-
-
 //A3//
 let canvas = document.getElementById("myFirstCanvas");
 let context = canvas.getContext("2d");
+// Grass
+context.fillStyle = "green";
+context.fillRect(0, 300, 700, 200);
 // Himmel
 context.fillStyle = "lightblue";
-context.fillRect(0, 0, 800, 600);
+context.fillRect(0, 0, 700, 300);
+// Haus
+//Wand
+context.fillStyle = "beige";
+context.fillRect(450, 250, 200, 200);
+context.beginPath();
+//Dach
+context.fillStyle = "blue";
+context.moveTo(450, 250); //Keine Linie- Position
+context.lineTo(650, 250); //Linie
+context.lineTo(550, 70);
+context.fill();
+context.closePath();
+// Baum
+context.fillStyle = "brown";
+context.fillRect(300, 180, 40, 300);
+context.beginPath();
+context.fillStyle = "lightgreen";
+context.arc(300, 150, 90, 0, 90);
+context.fill();
+context.closePath();
+//A3_bcd
+class Rechteck {
+    constructor() {
+        this.maxWidth = 200;
+        this.maxHeight = 300;
+        this.x1 = this.random(0, this.maxWidth);
+        this.x2 = this.random(this.x1, this.maxWidth);
+        this.y1 = this.random(0, this.maxHeight);
+        this.y2 = this.random(this.y1, this.maxHeight);
+    }
+    random(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    drawRect() {
+        context.beginPath();
+        context.lineWidth = 15;
+        context.fillStyle = "black";
+        context.strokeStyle = "black";
+        context.moveTo(this.x1, this.y1);
+        context.lineTo(this.x2, this.y1);
+        context.lineTo(this.x2, this.y2);
+        context.lineTo(this.x1, this.y2);
+        context.closePath();
+        context.stroke();
+        context.fill();
+        context.closePath();
+    }
+}
+let rechtArray = [new Rechteck(), new Rechteck(), new Rechteck()];
+for (const recht of rechtArray) {
+    recht.drawRect();
+}
 //# sourceMappingURL=script.js.map

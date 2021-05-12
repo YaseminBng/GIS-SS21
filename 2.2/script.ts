@@ -170,8 +170,8 @@ context.beginPath();
 
 //Dach
 context.fillStyle = "blue";
-context.moveTo(450, 250);
-context.lineTo(650, 250);
+context.moveTo(450, 250); //Keine Linie- Position
+context.lineTo(650, 250); //Linie
 context.lineTo(550, 70);
 context.fill();
 context.closePath();

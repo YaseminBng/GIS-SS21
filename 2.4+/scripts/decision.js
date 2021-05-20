@@ -19,15 +19,15 @@ var Abgabe_4;
         loadImages();
         if (path == "top.html") {
             selected = Abgabe_4.selectedElements.top;
-            addDetailWindow(posibilityTop);
+            addDetailWindow(Abgabe_4.posibilityTop);
         }
         else if (path == "middle.html") {
             selected = Abgabe_4.selectedElements.middle;
-            addDetailWindow(posibilityMiddle);
+            addDetailWindow(Abgabe_4.posibilityMiddle);
         }
         else if (path == "bottom.html") {
             selected = Abgabe_4.selectedElements.bottom;
-            addDetailWindow(posibilityBottom);
+            addDetailWindow(Abgabe_4.posibilityBottom);
         }
         if (Abgabe_4.selectedElements.top == undefined || Abgabe_4.selectedElements.middle == undefined || Abgabe_4.selectedElements.bottom == undefined) {
             btSave.textContent = "next";

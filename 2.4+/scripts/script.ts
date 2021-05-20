@@ -2,7 +2,6 @@ namespace Abgabe_4 {
 
     export let selectedElements: Selected = {top: undefined, middle: undefined, bottom: undefined};
     export let keyConfig: string = "ConfigJson";
- 
     export class Posibility {
         name: string;
         type: number;

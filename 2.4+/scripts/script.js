@@ -9,16 +9,16 @@ var Abgabe_4;
             this.type = _type;
             this.link = _link;
             if (this.type == 0) {
-                this.removeSameFromArray(posibilityTop, this.name);
-                posibilityTop.unshift(this);
+                this.removeSameFromArray(Abgabe_4.posibilityTop, this.name);
+                Abgabe_4.posibilityTop.unshift(this);
             }
             else if (this.type == 1) {
-                this.removeSameFromArray(posibilityMiddle, this.name);
-                posibilityMiddle.unshift(this);
+                this.removeSameFromArray(Abgabe_4.posibilityMiddle, this.name);
+                Abgabe_4.posibilityMiddle.unshift(this);
             }
             else if (this.type == 2) {
-                this.removeSameFromArray(posibilityBottom, this.name);
-                posibilityBottom.push(this);
+                this.removeSameFromArray(Abgabe_4.posibilityBottom, this.name);
+                Abgabe_4.posibilityBottom.push(this);
             }
         }
         removeSameFromArray(posArray, name) {

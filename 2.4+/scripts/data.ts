@@ -27,7 +27,7 @@ namespace Abagbe_4 {
     allPosArrayFromJSON(allPosArrayToJSON());
 
     export function allPosArrayToJSON(): string {
-        let allPosArray: AllPosArrayInterface = { top: posibilityTop, middle: posibilityMiddle, bottom: posibilityBottom };
+        let allPosArray: AllPosArrayInterface  = { top: posibilityTop, middle: posibilityMiddle, bottom: posibilityBottom };
         let json: string = JSON.stringify(allPosArray);
         console.log(json);
         return json;

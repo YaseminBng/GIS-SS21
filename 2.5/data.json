@@ -1,0 +1,53 @@
+{
+    "top": [
+        {
+            "name": "cupcake1 - top",
+            "type": 0,
+            "link": "images/top1.png"
+        },
+        {
+            "name": "cupcake2 - top",
+            "type": 0,
+            "link": "images/top2.png"
+        },
+        {
+            "name": "cupcake3 - top",
+            "type": 0,
+            "link": "images/top3.png"
+        }
+    ],
+    "middle": [
+        {
+            "name": "cupcake1 - middle",
+            "type": 1,
+            "link": "images/middle1.png"
+        },
+        {
+            "name": "cupcake2 - middle",
+            "type": 1,
+            "link": "images/middle2.png"
+        },
+        {
+            "name": "cupcake3 - middle",
+            "type": 1,
+            "link": "images/middle3.png"
+        }
+    ],
+    "bottom": [
+        {
+            "name": "cupcake1 - bottom",
+            "type": 2,
+            "link": "images/bottom1.png"
+        },
+        {
+            "name": "cupcake2 - bottom",
+            "type": 2,
+            "link": "images/bottom2.png"
+        },
+        {
+            "name": "cupcake3 - bottom",
+            "type": 2,
+            "link": "images/bottom3.png"
+        }
+    ]
+}

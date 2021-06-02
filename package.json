@@ -1,0 +1,19 @@
+{
+  "name": "praktikumtest",
+  "version": "1.0.0",
+  "description": "hi hi",
+  "main": "index.js",
+  "scripts": {
+    "start": "node 3.1/bspserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaseminBng/GIS-SS21.git"
+  },
+  "author": "yasemin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaseminBng/GIS-SS21/issues"
+  },
+  "homepage": "https://github.com/YaseminBng/GIS-SS21#readme"
+}

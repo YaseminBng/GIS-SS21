@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Yasemin Bingöl" />
+    <meta name="description" content="Abgabe_32" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h4>3_2</h4>
+    </header>
+
+    <main>
+        <h1>LOGIN</h1>
+        <form action="https://letsdothisgis20.herokuapp.com" method="port">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">divers</label>
+
+            
+            <p><label>last name:</label></p>
+            <input type="text" id="name" name="name">
+            <p><label>first name:</label></p>
+            <input type="text" id="fname" name="fname">
+            <p><label>street and number:</label></p>
+            <input type="text" id="adress" name="adress">
+            <p><label>postcode:</label></p>
+            <input type="text" id="pcode" name="pcode">
+            <p><label>city:</label></p>
+            <input type="text" id="city" name="city">
+
+            <p><button type="button" id="sendJSON">Send to JSON</button></p>
+            <p><button type="button" id="sendHTML">Send to HTML</button></p>
+        </form>
+        <div id="solution"></div>
+    </main>
+
+    <footer>
+    </footer>

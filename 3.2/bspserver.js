@@ -18,11 +18,11 @@ var A3_2server;
     }
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
-        _response.setHeader("content-type", "text/html; charset=utf-8");
         _response.setHeader("Access-Control-Allow-Origin", "*"); //zugangsberechtigung
         let url = Url.parse(_request.url, true);
         let query = url.query;
         if (url.pathname == "/html") { //bin auf html?
+            _response.setHeader("content-type", "text/html; charset=utf-8");
             for (let key in query) { // alle keys durchgehen
                 let value = query[key]; //verwende für jeden key den value
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>"); //schreibe die Verbindung aus Key und Value

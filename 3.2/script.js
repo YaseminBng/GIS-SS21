@@ -14,8 +14,8 @@ var A3_2;
         url = url + "?" + query.toString();
         let answer = await fetch(url);
         console.log("Response: ", answer);
-        let json = await answer.json();
-        console.log(json);
+        let json = await answer.text();
+        console.log(JSON.parse(json));
     }
     async function sendHTML(_ev) {
         _ev.preventDefault();

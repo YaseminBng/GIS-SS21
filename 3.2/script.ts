@@ -14,8 +14,8 @@ namespace A3_2 {
         url = url + "?" + query.toString();
         let answer: Response = await fetch(url);
         console.log("Response: ", answer);
-        let json: JSON = await answer.json();
-        console.log(json);
+        let json: string = await answer.text();
+        console.log(JSON.parse(json));
     }
 
     async function sendHTML(_ev: Event): Promise<void> {

@@ -4,7 +4,7 @@
   "description": "hi hi",
   "main": "index.js",
   "scripts": {
-    "start": "node 3.1/bspserver.js"
+    "start": "node 3.2/bspserver.js"
   },
   "repository": {
     "type": "git",

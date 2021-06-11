@@ -22,12 +22,13 @@ export namespace A3_2server {
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
         console.log("I hear voices!"); 
-        _response.setHeader("content-type", "text/html; charset=utf-8");
+        
         _response.setHeader("Access-Control-Allow-Origin", "*"); //zugangsberechtigung
         let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
         let query: Query = url.query;
 
         if (url.pathname == "/html") {       //bin auf html?
+            _response.setHeader("content-type", "text/html; charset=utf-8");
             for (let key in query) {    // alle keys durchgehen
                 let value: string | string[] = query[key];  //verwende für jeden key den value
                 _response.write("<p>KEY: " + key + ", Value: " + value + "</p>"); //schreibe die Verbindung aus Key und Value

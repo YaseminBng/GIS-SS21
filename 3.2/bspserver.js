@@ -29,6 +29,7 @@ var A3_2server;
             }
         }
         if (url.pathname == "/json") {
+            _response.setHeader("content-type", "applications/json");
             _response.write(JSON.stringify(query));
         }
         _response.end();

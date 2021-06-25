@@ -8,7 +8,7 @@ const Mongo = require("mongodb");
 var A3_4;
 (function (A3_4) {
     let mongoCollection;
-    let mongoUrl = "mongodb+srv://Testuser:GIS2021@dbUser.oawwp.mongodb.net";
+    let mongoUrl = "https://mongodbnetbrowser.herokuapp.com/?u=dbUser&p=GIS2021&a=gis.rjakz.mongodb.net&n=Test&c=Students";
     let port = Number(process.env.PORT);
     if (!port)
         port = 8100;
@@ -43,7 +43,7 @@ var A3_4;
                 _response.write(JSON.stringify(await (mongoCollection.find().toArray())));
             }
             else if (pathname == "/entfernen") {
-                mongoCollection.deleteOne({ "name": url.query["name"], "nachname": url.query["nachname"], "matrikelnummer": url.query["matrikelnummer"] });
+                mongoCollection.deleteOne({ "First name": url.query["First name"], "Last name": url.query["Last name"], "Matrikelnummer": url.query["Matrikelnummer"] });
                 connectToDatabase(mongoUrl);
             }
         }

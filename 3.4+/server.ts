@@ -7,7 +7,7 @@ export namespace A3_4 {
 
     let mongoCollection: Mongo.Collection;
     
-    let mongoUrl: string = "mongodb+srv://Testuser:GIS2021@dbUser.oawwp.mongodb.net";
+    let mongoUrl: string = "https://mongodbnetbrowser.herokuapp.com/?u=dbUser&p=GIS2021&a=gis.rjakz.mongodb.net&n=Test&c=Students";
     
 
     let port: number = Number(process.env.PORT);
@@ -59,7 +59,7 @@ export namespace A3_4 {
                 
 
             } else if (pathname == "/entfernen") {
-                mongoCollection.deleteOne({ "name": url.query ["name"], "nachname": url.query ["nachname"], "matrikelnummer": url.query ["matrikelnummer"]});
+                mongoCollection.deleteOne({ "First name": url.query ["First name"], "Last name": url.query ["Last name"], "Matrikelnummer": url.query ["Matrikelnummer"]});
                 connectToDatabase(mongoUrl);
             }
 

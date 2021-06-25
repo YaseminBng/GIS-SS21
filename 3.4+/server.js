@@ -1,14 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.A3_4 = void 0;
-/;
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
 var A3_4;
 (function (A3_4) {
     let mongoCollection;
-    let mongoUrl = "https://mongodbnetbrowser.herokuapp.com/?u=dbUser&p=GIS2021&a=gis.rjakz.mongodb.net&n=Test&c=Students";
+    let mongoUrl = "mongodb+srv://dbUser:GIS2021@gis.rjakz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
     let port = Number(process.env.PORT);
     if (!port)
         port = 8100;

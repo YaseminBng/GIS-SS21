@@ -1,4 +1,4 @@
-/
+
 import * as Http from "http";
 import * as Url from "url";
 import * as Mongo from "mongodb";
@@ -7,7 +7,7 @@ export namespace A3_4 {
 
     let mongoCollection: Mongo.Collection;
     
-    let mongoUrl: string = "https://mongodbnetbrowser.herokuapp.com/?u=dbUser&p=GIS2021&a=gis.rjakz.mongodb.net&n=Test&c=Students";
+    let mongoUrl: string = "mongodb+srv://dbUser:GIS2021@gis.rjakz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
     
 
     let port: number = Number(process.env.PORT);
